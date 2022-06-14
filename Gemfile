@@ -11,6 +11,7 @@ gem 'capybara'
 gem 'simplecov'
 gem 'pg'
 gem 'sinatra-flash'
+gem 'bcrypt'
 
 group :development, :test do
     gem "rubocop", "1.20"
