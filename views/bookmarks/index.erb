@@ -1,5 +1,10 @@
 
 <ul>
+
+<% if @user %>
+  <h1>Welcome, <%= @user.email %></h1>
+<% end %>
+
   <% @bookmarks.each do |bookmark| %>
     <li class="bookmark" id="bookmark-<%= bookmark.id %>">
       <a href="<%= bookmark.url %>" target="_blank">
@@ -25,4 +30,3 @@
 </ul>
 <h2>
   <%= flash[:notice] %>
-</h2>
